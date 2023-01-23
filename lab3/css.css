@@ -1,0 +1,170 @@
+
+body{
+    font-family: Raleway;
+    background-color: rgb(18, 18, 19);
+}
+
+header  > img{
+    height: 150px;
+    width: 250px;
+}
+
+h1{
+    color: aliceblue;
+}
+
+header{
+    margin: 12px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+header a{
+    margin-right: 10px;
+    font-size: 24px; 
+    font-style: normal;
+    font-variant: normal; 
+    font-weight: 700;
+    line-height: 26.4px;
+}
+
+header a:hover{
+    text-decoration: none;
+}
+
+.Price{
+    background-color: rgb(231, 231, 230);
+    font-size: 48px;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border: solid 1px rgb(221, 128, 6);
+    border-radius: 10px;
+    height: 500px;
+}
+
+.item a{
+   font-size: 24px;
+   font-style: normal;
+   font-variant: normal;
+   font-weight: 700;
+   line-height: 26.4px;
+   color: aliceblue;
+}
+
+.item {
+    border: solid 1px gray;
+    display: flex;  
+    align-items: center;    
+    flex-direction: column;
+    border-radius: 10px; 
+    margin-right: 12px;
+    margin-left: 12px;
+    margin-top: 20px;
+}
+
+ .item:hover >img{
+    transition: all 0.5s ease-in-out;
+    opacity: 40%;
+}
+
+.main-catalog{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+main > h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item > img{
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.but {
+    margin-top: 15px;
+    margin-right: 5px;
+    width: 150px;
+    height: 25px;
+    border-radius: 10px;
+    border: solid 1px rgb(221, 128, 6);
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.but:active{
+    background-color:  rgb(221, 128, 6);
+}
+
+@media screen and (min-width: 1280px) {
+    header{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    header > img{
+        margin-left: 40px;
+    }
+
+    header > div{
+        margin-right: 40px;
+    }
+
+    .item {
+        border: solid 1px gray;
+        display: flex;  
+        align-items: center;    
+        flex-direction: column;
+        width: 355px;
+        margin-left: 24px;
+        border-radius: 10px; 
+        
+    }
+
+    .item > img {
+        height: 320px;
+    }
+    
+    .main-catalog{
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 40px;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .item {
+        border: solid 1px rgb(221, 128, 6);
+        display: flex;  
+        align-items: center;    
+        flex-direction: column;
+        width: 400px;
+        margin-left: 24px;
+
+        
+    }
+}
+
+
+
+
