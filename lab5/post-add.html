@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа №5</title>
+    <link rel="stylesheet" href="./css/post-add.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo.PNG" style="margin-left: 2%;">
+        <div class="header-right-part"  >
+                <ref class="login-ref" style="margin-top: 5px;" >
+                    <img src="img/person.PNG" >
+                    <span  style="margin-right: 25px; margin-left: 15px;">@UserAccountLogin</span>
+                </ref>
+
+            <button class="new-post-btn" >Новая запись</button>
+            <ref class="out-ref" >Выйти</ref>
+        </div>
+    </header>
+
+    <main>
+       <h1 style="font-family: Golos UI; font-weight: 1000; margin-left: 10%;">Добавить запись</h1>
+       <form action="" method="get" class="post-form">
+            <div class="form-element">
+                <p>Заголовок</p>
+                <input name="user-heading" placeholder="Введите заголовок" class="input-in-form" maxlength="150">
+            </div>
+            <div class="form-element">
+                <p>Текст</p>
+                <textarea name="text-in-form" class = "textarea-in-form" placeholder="Введите текст"></textarea>
+            </div>
+            <div class="form-element-sel">
+                <p>Выберите категорию</p>
+                <select size="1" name="sel-in-form" class="sel-in-form" >
+                    <option disabled selected>без категории</option>
+                    <option>Категория 1</option>
+                    <option>Категория 2</option>
+                    <option>Категория 3</option>
+                    <option>Категория 4</option>
+                </select>
+            </div>
+            <label  class="pic-in-form-outside" id = "pic-label" >
+                <img src="img/file-sel-part.PNG" style="height: 23px; margin-left: 25px;">
+                <span id = "pic-span">Прикрепить файл изображения</span>
+                <input id = "btn-file" name="sel-pic" placeholder="выберете фото" class="pic-in-form-inside" accept="image/*" type="file">
+            </label>
+            <button class="sub-btn" type="submit">Опубликовать</button>
+       </form>
+    </main>
+
+    <footer>
+        <div class="footer-left-side" style="margin-left: 10%;">
+            <ref class="footer-ref"  style="margin-right: 35px;">Об авторе</ref>
+            <ref class="footer-ref"  >Технологии</ref>
+        </div>
+        <ref style="color: rgb(136, 128, 136); margin-right: 10%; font-family: Golos UI">© Blog, 2022</ref>
+    </footer>
+ <script src="./post-add.js"></script>
+</body>
+</html>
