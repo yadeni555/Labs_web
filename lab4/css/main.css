@@ -1,0 +1,152 @@
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+body{
+    font-family: Raleway;
+    background-color: rgb(136, 179, 204);
+}
+header  > img{
+    height: 100px;
+    width: 200px;
+}
+header{
+    margin: 12px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+header a{
+    margin-right: 10px;
+}
+header a:hover{
+    text-decoration: none;
+}
+.content{
+    background-color: rgb(128, 169, 192);
+    font-size: 48px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px gray;
+    border-radius: 10px;
+    height: 1000px;
+}
+.item span{
+   font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+}
+.item {
+    border: solid 1px gray;
+    display: flex;  
+    align-items: center;    
+    flex-direction: column;
+    border-radius: 10px; 
+    margin-right: 12px;
+    margin-left: 12px;
+    margin-top: 20px;
+}
+ .item:hover .item_img{
+    transition: all 0.5s ease-in-out;
+    opacity: 40%;
+}
+.main-catalog{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+main > h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item > img{
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    margin-top: 15px;
+    margin-right: 5px;
+    width: 150px;
+    height: 25px;
+    border-radius: 10px;
+    border: solid 1px black;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 500;
+}
+.btn:active{
+    background-color:  rgb(128, 169, 192);
+}
+.catalog-sort {
+    margin-top: 15px;
+    margin-right: 5px;
+    width: 200px;
+    height: 25px;
+    border-radius: 10px;
+    border: solid 1px black;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 500;
+}
+.catalog-sort:active{
+    background-color:  rgb(128, 169, 192);
+}
+@media screen and (min-width: 1280px) {
+    header{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    header > img{
+        margin-left: 40px;
+    }
+    header > div{
+        margin-right: 40px;
+    }
+    .item {
+        border: solid 1px gray;
+        display: flex;  
+        align-items: center;    
+        flex-direction: column;
+        width: 355px;
+        margin-left: 24px;
+        border-radius: 10px; 
+        
+    }
+    .item > img {
+        height: 320px;
+    }
+    
+    .main-catalog{
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 40px;
+    }
+
+}
+@media screen and (min-width: 1440px) {
+    .item {
+        border: solid 1px gray;
+        display: flex;  
+        align-items: center;    
+        flex-direction: column;
+        width: 400px;
+        margin-left: 24px;
+
+        
+    }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="./css/reg.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo.PNG" style="margin-left: 2%;">
+        <div class="header-right-part"  >
+                <ref class="login-ref" style="margin-top: 5px;" >
+                    <img src="img/person.PNG" >
+                    <span  style="margin-right: 25px; margin-left: 15px;">@UserAccountLogin</span>
+                </ref>
+
+            <button class="new-post-btn" >Новая запись</button>
+            <ref class="out-ref" >Выйти</ref>
+        </div>
+    </header>
+
+    <main>
+       <h1 style="font-family: Golos UI; font-weight: 1000; margin-left: 10%;">Регистрация</h1>
+       <form action="" method="post" onsubmit="return validateMyForm();" class="post-form">
+        <div class="pair-of-elem">
+            <div class="user-input-elem">
+                <span  class="elem-title">имя</span>
+                <input name="user-name" id="user-name" placeholder="Ваше имя" class="elem-input" minlength="2"  pattern="([A-я]|[A-z]|\s|-)*">        
+            </div>
+            <div class="user-input-elem">
+                <span  class="elem-title">фамилия</span>
+                <input name="user-secondname" id="user-secondname" placeholder="Ваша фамилия" class="elem-input" minlength="2" pattern="([A-я]|[A-z]|\s|-)*" >
+            </div>
+        </div>
+        <div  class="pair-of-elem">
+            <div class="user-input-elem">
+                <span class="elem-title">логин*</span>
+                <input name="user-login" id="user-login" required placeholder="Ваш логин" class="elem-input" minlength="5" maxlength="150"  pattern="([A-я]|[A-z]|\d|@|\.|\+|-|_)*">
+                <span id="err-login" class="msg-err" ></span>
+            </div>
+            <div class="user-input-elem">
+                <span  class="elem-title">электронная почта</span>
+                <input name="user-email" id="user-email" placeholder="Ваша электронная почта" class="elem-input" maxlength="25"pattern="([A-z]|\d|_|-)+@(mail|gmail|yandex)\.(ru|net)">
+                
+            </div>
+        </div>
+        
+        <div class="validation-blok">
+            <div class="validation-msg" >
+                <img src="img/galka.PNG" id="val-log-symbols-img">
+                <span id="val-log-symbols" >Только буквы, цифры и символы @.+-_</span>
+            </div>
+            <div class="validation-msg">
+                <img src="img/galka.PNG" id="val-log-150-img">
+                <span id="val-log-150">Не более 150 символов</span>
+            </div>
+            <div class="validation-msg">
+                <img src="img/galka.PNG" id="val-log-5-img">
+                <span id="val-log-5">Не более 5 символов</span>
+            </div>
+            <div class="validation-msg">
+                <img src="img/galka.PNG" id="val-log-pass-img">
+                <span id="val-log-pass">Не cовпадает с паролем</span>
+            </div>
+        </div>
+        <div class="pair-of-elem">
+            <div class="user-input-elem">
+                <span  class="elem-title">пароль*</span>
+                <input name="user-pass" id="user-pass" required type="password" placeholder="Ваш пароль" minlength="8" class="elem-input" maxlength="25" pattern=".*\D.*">
+                <span id="err-pass" class="msg-err" ></span>
+            </div>
+            <div class="user-input-elem">
+                <span  class="elem-title">подтверждение пароля*</span>
+                <input name="user-pass-2" id="user-pass-2" required type="password" placeholder="Повторите пароль" minlength="8" class="elem-input" maxlength="25" pattern=".*\D.*">
+                <span id="err-pass2" class="msg-err" ></span>
+            </div>   
+        </div>  
+        <div class="pair-of-elem" style="margin-top: 0;">
+            <div class="validation-blok" >
+                <div class="validation-msg">
+                    <img src="img/galka.PNG" id="val-pass-8-img">
+                    <span id="val-pass-8">Не менее 8-ми символов</span>
+                </div>
+                <div class="validation-msg" >
+                    <img src="img/galka.PNG" id="val-pass-25-img">
+                    <span id="val-pass-25" >Не превышает 25 символов</span>
+                </div>
+                <div class="validation-msg">
+                    <img src="img/galka.PNG" id="val-pass-symbols-img">
+                    <span id="val-pass-symbols">Не состоит только из цифр</span>
+                </div>
+                <div class="validation-msg">
+                    <img src="img/galka.PNG" id="val-pass-pass2-img">
+                    <span id="val-pass-pass2">Не cовпадает с логином</span>
+                </div>
+            </div>
+            <div class="validation-blok" >
+                <div class="validation-msg">
+                    <img src="img/galka.PNG" id="val-pass2-8-img" >
+                    <span  id="val-pass2-8">Не менее 8-ми символов</span>
+                </div>
+                <div class="validation-msg">
+                    <img src="img/galka.PNG"  id="val-pass2-25-img">
+                    <span  id="val-pass2-25">Не превышает 25 символов</span>
+                </div>
+                <div class="validation-msg">
+                    <img src="img/galka.PNG"  id="val-pass2-symbols-img">
+                    <span id="val-pass2-symbols">Не состоит только из цифр</span>
+                </div>
+                <div class="validation-msg">
+                    <img src="img/galka.PNG" id="val-pass2-pass-img">
+                    <span id="val-pass2-pass">Пароли совпадают</span>
+                </div>
+            </div>
+        </div>
+        <div name="user-check" class="user-check">
+            <input id="user-checkbox" name="user-personal-data-check" type="checkbox" checked="checked" >
+            <span>Даю согласие на обработку персональных данных</span>
+        </div>
+        <button id="btn" class="user-post" type="submit">Зарегистрировать</button>
+        
+       </form>
+    </main>
+
+    <footer>
+        <div class="footer-left-side" style="margin-left: 10%;">
+            <ref class="footer-ref"  style="margin-right: 35px;">Об авторе</ref>
+            <ref class="footer-ref"  >Технологии</ref>
+        </div>
+        <ref style="color: rgb(136, 128, 136); margin-right: 10%; font-family: Golos UI">© Blog, 2022</ref>
+    </footer>
+ <script src="./reg.js"></script>
+</body>
+</html>
