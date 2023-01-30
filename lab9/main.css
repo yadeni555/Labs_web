@@ -1,0 +1,89 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+html{height:100%}
+body{line-height:1}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+table{border-collapse:collapse;border-spacing:0}
+a:hover{text-decoration: none;}
+*{box-sizing: border-box;}
+
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700&display=swap');
+body{
+   font-family: 'Unbounded', cursive;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #624C91;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header>img{
+    width: 180px;
+    height: 49px;
+    margin: 15px 0 16px 60px;
+}
+
+.ssilka{
+    margin-right: 60px;
+    width: 278.78px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.ssilka a:last-child{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    width: 47px;
+}
+
+.user img{
+    width: 21.78px;
+    height: 27.22px;
+    margin-right: 28px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+footer{
+    background-color: #F3F3F3;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 0 60px 60px 60px;
+}
+
+.foot-a:first-child{
+    margin-right: 40px;
+}
+
+.foot-a{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #366AF3;
+}
+
+.foot-text{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #999999;
+}
